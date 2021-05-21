@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>#My famliy Book</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h1>#My famliy Book</h1>
+    <audio id="audio" src="Maroon_5_-_Memories_(FeelMP3.com).mp3">
+</audio>
+<img id="album" src="family.jpeg">
+
+ <div>
+  <h4 id="fm"></h4>
+  
+  <button onclick="update()"> #Next Family Member </button>
+ </div>
+</body>
+</html>
+<script>
+    var images = ["dadu.jpeg","dadi.jpeg","dad.jpeg","mom.jpeg","me.jpeg"];
+    var names = ["Sudhir Shah (DADU)","Nandini Shah (DADI)","Bhavik Shah (DAD)","Anushka Shah (MOM)","Yug Shah (ME)"]
+
+var i = 0;
+function update(){
+  document.getElementById("album").src = images[i];
+  i++;
+  var numbers_of_family_members_in_array = 5
+  if(i > numbers_of_family_members_in_array)
+  {
+    i = 0;
+  }
+                      document.getElementById("audio").play();
+                      document.getElementById(names).innerHTML = fm;
+}
+</script>
+

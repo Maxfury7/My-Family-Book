@@ -1,0 +1,12 @@
+Body{
+  background-color:aqua;
+  text-align:Center
+}
+#album{
+  width:400px;
+  height: 500px;
+}
+Button{
+  width:150px;
+    height:50px
+}
